@@ -31,10 +31,9 @@ class HomeActivity : AppCompatActivity(), ClickInterface {
 
     lateinit var mRecyclerViewAdapter: MyRecyclerViewAdapter
 
-    val mAppDatabaseDao :UserListDao by lazy {
+    val mAppDatabaseDao: UserListDao by lazy {
         AppDatabase.invoke(this).getUserListDao()
     }
-
 
 
     lateinit var mUserList: UserList
@@ -71,7 +70,6 @@ class HomeActivity : AppCompatActivity(), ClickInterface {
     private fun init() {
 
         val aDBObject = AppDatabase.invoke(this).getUserListDao()
-        // mHomeViewModel.aBottomSheet = aBottomSheet
         val parentView = findViewById<View>(R.id.bottom_sheet)
         mBottomSheetBehavior = BottomSheetBehavior.from(parentView)
         mBottomSheetBehavior.peekHeight = 0
