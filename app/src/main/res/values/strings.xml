@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CRUDTASK</string>
+    <string name="email_str">Email</string>
+    <string name="password_str">Password</string>
+    <string name="confirm_password_str">Confirm Password</string>
+    <string name="login_str">Login</string>
+    <string name="signup_str">signup</string>
+    <string name="username_str">Username</string>
+    <string name="save_str">Save</string>
+    <string name="mobile_number_str">Mobile number</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>
