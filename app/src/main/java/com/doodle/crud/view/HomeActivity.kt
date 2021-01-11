@@ -119,42 +119,8 @@ class HomeActivity : AppCompatActivity(), ClickInterface {
         val aList = aDBObject.getUserListBasedonUser(mUserId, "0")
         mRecyclerViewAdapter.update(aList as ArrayList<UserList>)
 
-
-        clickListener(aDBObject)
-
     }
 
-    private fun clickListener(aDBObject: UserListDao) {
-
-
-        /* office_add_form.setOnClickListener {
-             if (mBottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
-                 mBottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-             }
-
-             Form_username_EDT.setText("")
-             Form_mobile_EDT.setText("")
-
-             form_save_BUT.visibility = View.VISIBLE
-             form_edit_BUT.visibility = View.GONE
-             form_delete_BUT.visibility = View.GONE
-         }*/
-
-
-
-       /* form_save_BUT.setOnClickListener {
-
-
-        }
-
-        form_edit_BUT.setOnClickListener {
-
-        }
-
-        form_delete_BUT.setOnClickListener {
-
-        }*/
-    }
 
     override fun onClickItem(aUserList: UserList, aPosition: Int) {
         Form_username_EDT.setText(aUserList.username)

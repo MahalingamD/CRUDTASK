@@ -35,7 +35,6 @@ fun isValidEmail(email: String): Boolean {
 fun hideKeyboard(ctx: Context) {
     val inputManager = ctx.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
-    // check if no view has focus:
     val v = (ctx as Activity).currentFocus ?: return
 
     inputManager.hideSoftInputFromWindow(v.windowToken, 0)

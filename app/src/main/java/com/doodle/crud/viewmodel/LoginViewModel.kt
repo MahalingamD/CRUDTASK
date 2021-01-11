@@ -67,6 +67,5 @@ class LoginViewModel : ViewModel() {
         mBinding.signup = aSignupViewModel
         mAlertDialog = dialogBuilder.create()
         mAlertDialog!!.show()
-      //  aView.context.toast("empty email")
     }
 }
